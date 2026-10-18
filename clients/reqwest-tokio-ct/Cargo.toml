@@ -1,0 +1,10 @@
+[package]
+name = "fetch-reqwest-tokio-ct"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# the async client on a current-thread runtime
+reqwest = "0.13"
+tokio = { version = "1", features = ["rt", "macros"] }

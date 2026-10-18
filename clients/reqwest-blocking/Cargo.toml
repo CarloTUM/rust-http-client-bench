@@ -1,0 +1,10 @@
+[package]
+name = "fetch-reqwest-blocking"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# default features (rustls with aws-lc-rs and the platform verifier, charset,
+# http2, system-proxy) plus `blocking`
+reqwest = { version = "0.13", features = ["blocking"] }

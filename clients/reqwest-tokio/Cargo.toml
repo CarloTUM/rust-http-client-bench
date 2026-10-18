@@ -1,0 +1,11 @@
+[package]
+name = "fetch-reqwest-tokio"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# the async client on tokio's default multi-thread runtime: what most CLI
+# authors end up with
+reqwest = "0.13"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }

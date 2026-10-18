@@ -1,0 +1,9 @@
+[package]
+name = "fetch-reqwest-blocking-native"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# the same feature set with native-tls instead of rustls
+reqwest = { version = "0.13", default-features = false, features = ["blocking", "native-tls", "charset", "http2", "system-proxy"] }
