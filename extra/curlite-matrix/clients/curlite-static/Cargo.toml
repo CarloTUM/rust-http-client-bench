@@ -1,0 +1,9 @@
+[package]
+name = "fetch-curlite-static"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# libcurl built from source and linked statically, TLS from the system OpenSSL
+curlite = { version = "0.2", features = ["static-curl"] }

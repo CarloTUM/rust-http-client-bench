@@ -1,0 +1,10 @@
+[package]
+name = "fetch-curlite-ring-min"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# rustls on ring plus an HTTP(S)-only libcurl build (`minimal`, patched curl crates)
+curlite = { version = "0.2", default-features = false }
+curl = { version = "0.4", default-features = false, features = ["rustls-ring", "static-curl", "minimal"] }

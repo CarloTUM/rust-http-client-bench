@@ -1,0 +1,9 @@
+[package]
+name = "fetch-curlite-static-ssl"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# libcurl and OpenSSL both built from source and linked statically: libc only
+curlite = { version = "0.2", features = ["static-curl", "static-ssl"] }

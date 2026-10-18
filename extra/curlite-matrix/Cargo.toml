@@ -1,0 +1,20 @@
+# Extra curlite builds that need the curl-rust fork. A separate workspace, so
+# that the [patch] below cannot touch the clients in the main table.
+[workspace]
+resolver = "2"
+members = ["clients/*"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+# curl-rust with a `rustls-ring` feature (rustls-ffi on ring instead of
+# aws-lc: no cmake, no CPU jitter entropy seeding), proposed upstream as
+# https://github.com/sagebind/curl-rust/pull/687, plus a `minimal` feature
+# (HTTP(S)-only libcurl) that is not; pinned to the fork branch rustls-ring-minimal
+[patch.crates-io]
+curl-sys = { git = "https://github.com/CarloTUM/curl-rust", rev = "0cd5132b848295cdbfd7fd0fbfc04ec2472e67a5" }
+curl = { git = "https://github.com/CarloTUM/curl-rust", rev = "0cd5132b848295cdbfd7fd0fbfc04ec2472e67a5" }

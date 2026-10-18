@@ -1,0 +1,11 @@
+[package]
+name = "fetch-curlite-rustls-ring"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# libcurl built from source with rustls on ring: no OpenSSL, no aws-lc, no
+# cmake. The `rustls-ring` feature comes from the patched curl crates.
+curlite = { version = "0.2", default-features = false }
+curl = { version = "0.4", default-features = false, features = ["rustls-ring", "static-curl"] }
