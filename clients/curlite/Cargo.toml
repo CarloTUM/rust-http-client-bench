@@ -1,0 +1,9 @@
+[package]
+name = "fetch-curlite"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# default features: the distro libcurl with its TLS
+curlite = "0.2"

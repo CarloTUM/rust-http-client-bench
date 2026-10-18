@@ -1,0 +1,9 @@
+[package]
+name = "fetch-isahc"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# default features: libcurl built from source, rustls, HTTP/2
+isahc = "2"

@@ -1,0 +1,9 @@
+[package]
+name = "fetch-curl"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+# the curl crate directly, default features: the distro libcurl with its TLS
+curl = "0.4"
