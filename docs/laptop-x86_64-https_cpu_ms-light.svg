@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="682" viewBox="0 0 760 682" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12">
+<rect width="760" height="682" fill="#fcfcfb"/>
+<text x="16" y="24" font-size="14" font-weight="600" fill="#0b0b0b">CPU time of one HTTPS GET per process (TLS setup, certificate roots)</text>
+<text x="16" y="42" fill="#52514e">Intel Core i5-1245U, Ubuntu 24.04.4 LTS 7.0.0-38-generic</text>
+<text x="16" y="58" fill="#52514e">2026-10-18, median of 30 runs, bar = median, whisker = interquartile range</text>
+<line x1="179.8" y1="68" x2="179.8" y2="646" stroke="#e1e0d9" stroke-width="1"/>
+<text x="179.8" y="662" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">0</text>
+<line x1="349.2" y1="68" x2="349.2" y2="646" stroke="#e1e0d9" stroke-width="1"/>
+<text x="349.2" y="662" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">20</text>
+<line x1="518.6" y1="68" x2="518.6" y2="646" stroke="#e1e0d9" stroke-width="1"/>
+<text x="518.6" y="662" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">40</text>
+<line x1="688.0" y1="68" x2="688.0" y2="646" stroke="#e1e0d9" stroke-width="1"/>
+<text x="688.0" y="662" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">60 ms</text>
+<line x1="179.79999999999998" y1="68" x2="179.79999999999998" y2="646" stroke="#c3c2b7" stroke-width="1"/>
+<path d="M179.79999999999998,79.0 h5.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-5.6 z" fill="#b5b3ab"/>
+<text x="171.79999999999998" y="91.0" text-anchor="end" fill="#0b0b0b">empty</text>
+<line x1="188.7" y1="87.0" x2="189.5" y2="87.0" stroke="#52514e" stroke-width="1"/>
+<line x1="188.7" y1="84.0" x2="188.7" y2="90.0" stroke="#52514e" stroke-width="1"/>
+<line x1="189.5" y1="84.0" x2="189.5" y2="90.0" stroke="#52514e" stroke-width="1"/>
+<text x="195.5" y="91.0" fill="#52514e" font-variant-numeric="tabular-nums">1</text>
+<path d="M179.79999999999998,105.0 h86.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-86.2 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="117.0" text-anchor="end" fill="#0b0b0b">ureq</text>
+<line x1="261.2" y1="113.0" x2="276.1" y2="113.0" stroke="#52514e" stroke-width="1"/>
+<line x1="261.2" y1="110.0" x2="261.2" y2="116.0" stroke="#52514e" stroke-width="1"/>
+<line x1="276.1" y1="110.0" x2="276.1" y2="116.0" stroke="#52514e" stroke-width="1"/>
+<text x="282.1" y="117.0" fill="#52514e" font-variant-numeric="tabular-nums">11</text>
+<path d="M179.79999999999998,131.0 h140.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-140.2 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="143.0" text-anchor="end" fill="#0b0b0b">curlite-ring-min</text>
+<line x1="318.2" y1="139.0" x2="330.3" y2="139.0" stroke="#52514e" stroke-width="1"/>
+<line x1="318.2" y1="136.0" x2="318.2" y2="142.0" stroke="#52514e" stroke-width="1"/>
+<line x1="330.3" y1="136.0" x2="330.3" y2="142.0" stroke="#52514e" stroke-width="1"/>
+<text x="336.3" y="143.0" fill="#52514e" font-variant-numeric="tabular-nums">17</text>
+<path d="M179.79999999999998,157.0 h143.5 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-143.5 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="169.0" text-anchor="end" fill="#0b0b0b">curlite-rustls-ring</text>
+<line x1="321.7" y1="165.0" x2="332.1" y2="165.0" stroke="#52514e" stroke-width="1"/>
+<line x1="321.7" y1="162.0" x2="321.7" y2="168.0" stroke="#52514e" stroke-width="1"/>
+<line x1="332.1" y1="162.0" x2="332.1" y2="168.0" stroke="#52514e" stroke-width="1"/>
+<text x="338.1" y="169.0" fill="#52514e" font-variant-numeric="tabular-nums">17</text>
+<path d="M179.79999999999998,183.0 h176.1 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-176.1 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="195.0" text-anchor="end" fill="#0b0b0b">curlite-static-ssl</text>
+<line x1="351.7" y1="191.0" x2="362.8" y2="191.0" stroke="#52514e" stroke-width="1"/>
+<line x1="351.7" y1="188.0" x2="351.7" y2="194.0" stroke="#52514e" stroke-width="1"/>
+<line x1="362.8" y1="188.0" x2="362.8" y2="194.0" stroke="#52514e" stroke-width="1"/>
+<text x="368.8" y="195.0" fill="#52514e" font-variant-numeric="tabular-nums">21</text>
+<path d="M179.79999999999998,209.0 h190.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-190.6 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="221.0" text-anchor="end" fill="#0b0b0b">curlite-static</text>
+<line x1="364.5" y1="217.0" x2="390.7" y2="217.0" stroke="#52514e" stroke-width="1"/>
+<line x1="364.5" y1="214.0" x2="364.5" y2="220.0" stroke="#52514e" stroke-width="1"/>
+<line x1="390.7" y1="214.0" x2="390.7" y2="220.0" stroke="#52514e" stroke-width="1"/>
+<text x="396.7" y="221.0" fill="#52514e" font-variant-numeric="tabular-nums">23</text>
+<path d="M179.79999999999998,235.0 h199.4 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-199.4 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="247.0" text-anchor="end" fill="#0b0b0b">curlite</text>
+<line x1="349.2" y1="243.0" x2="391.3" y2="243.0" stroke="#52514e" stroke-width="1"/>
+<line x1="349.2" y1="240.0" x2="349.2" y2="246.0" stroke="#52514e" stroke-width="1"/>
+<line x1="391.3" y1="240.0" x2="391.3" y2="246.0" stroke="#52514e" stroke-width="1"/>
+<text x="397.3" y="247.0" fill="#52514e" font-variant-numeric="tabular-nums">24</text>
+<path d="M179.79999999999998,261.0 h261.3 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-261.3 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="273.0" text-anchor="end" fill="#0b0b0b">attohttpc-rustls</text>
+<line x1="435.9" y1="269.0" x2="478.4" y2="269.0" stroke="#52514e" stroke-width="1"/>
+<line x1="435.9" y1="266.0" x2="435.9" y2="272.0" stroke="#52514e" stroke-width="1"/>
+<line x1="478.4" y1="266.0" x2="478.4" y2="272.0" stroke="#52514e" stroke-width="1"/>
+<text x="484.4" y="273.0" fill="#52514e" font-variant-numeric="tabular-nums">31</text>
+<path d="M179.79999999999998,287.0 h264.9 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-264.9 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="299.0" text-anchor="end" fill="#0b0b0b">http_req-rustls</text>
+<line x1="431.6" y1="295.0" x2="478.1" y2="295.0" stroke="#52514e" stroke-width="1"/>
+<line x1="431.6" y1="292.0" x2="431.6" y2="298.0" stroke="#52514e" stroke-width="1"/>
+<line x1="478.1" y1="292.0" x2="478.1" y2="298.0" stroke="#52514e" stroke-width="1"/>
+<text x="484.1" y="299.0" fill="#52514e" font-variant-numeric="tabular-nums">32</text>
+<path d="M179.79999999999998,313.0 h266.9 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-266.9 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="325.0" text-anchor="end" fill="#0b0b0b">minreq</text>
+<line x1="438.7" y1="321.0" x2="459.6" y2="321.0" stroke="#52514e" stroke-width="1"/>
+<line x1="438.7" y1="318.0" x2="438.7" y2="324.0" stroke="#52514e" stroke-width="1"/>
+<line x1="459.6" y1="318.0" x2="459.6" y2="324.0" stroke="#52514e" stroke-width="1"/>
+<text x="465.6" y="325.0" fill="#52514e" font-variant-numeric="tabular-nums">32</text>
+<path d="M179.79999999999998,339.0 h289.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-289.2 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="351.0" text-anchor="end" fill="#0b0b0b">curlite-rustls</text>
+<line x1="449.9" y1="347.0" x2="480.6" y2="347.0" stroke="#52514e" stroke-width="1"/>
+<line x1="449.9" y1="344.0" x2="449.9" y2="350.0" stroke="#52514e" stroke-width="1"/>
+<line x1="480.6" y1="344.0" x2="480.6" y2="350.0" stroke="#52514e" stroke-width="1"/>
+<text x="486.6" y="351.0" fill="#52514e" font-variant-numeric="tabular-nums">35</text>
+<path d="M179.79999999999998,365.0 h307.7 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-307.7 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="377.0" text-anchor="end" fill="#0b0b0b">curl</text>
+<line x1="463.2" y1="373.0" x2="503.5" y2="373.0" stroke="#52514e" stroke-width="1"/>
+<line x1="463.2" y1="370.0" x2="463.2" y2="376.0" stroke="#52514e" stroke-width="1"/>
+<line x1="503.5" y1="370.0" x2="503.5" y2="376.0" stroke="#52514e" stroke-width="1"/>
+<text x="509.5" y="377.0" fill="#52514e" font-variant-numeric="tabular-nums">37</text>
+<path d="M179.79999999999998,391.0 h310.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-310.2 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="403.0" text-anchor="end" fill="#0b0b0b">isahc</text>
+<line x1="479.9" y1="399.0" x2="499.8" y2="399.0" stroke="#52514e" stroke-width="1"/>
+<line x1="479.9" y1="396.0" x2="479.9" y2="402.0" stroke="#52514e" stroke-width="1"/>
+<line x1="499.8" y1="396.0" x2="499.8" y2="402.0" stroke="#52514e" stroke-width="1"/>
+<text x="505.8" y="403.0" fill="#52514e" font-variant-numeric="tabular-nums">37</text>
+<path d="M179.79999999999998,417.0 h313.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-313.6 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="429.0" text-anchor="end" fill="#0b0b0b">hyper</text>
+<line x1="469.3" y1="425.0" x2="523.7" y2="425.0" stroke="#52514e" stroke-width="1"/>
+<line x1="469.3" y1="422.0" x2="469.3" y2="428.0" stroke="#52514e" stroke-width="1"/>
+<line x1="523.7" y1="422.0" x2="523.7" y2="428.0" stroke="#52514e" stroke-width="1"/>
+<text x="529.7" y="429.0" fill="#52514e" font-variant-numeric="tabular-nums">37</text>
+<path d="M179.79999999999998,443.0 h327.3 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-327.3 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="455.0" text-anchor="end" fill="#0b0b0b">reqwest-tokio-ct</text>
+<line x1="482.0" y1="451.0" x2="519.4" y2="451.0" stroke="#52514e" stroke-width="1"/>
+<line x1="482.0" y1="448.0" x2="482.0" y2="454.0" stroke="#52514e" stroke-width="1"/>
+<line x1="519.4" y1="448.0" x2="519.4" y2="454.0" stroke="#52514e" stroke-width="1"/>
+<text x="525.4" y="455.0" fill="#52514e" font-variant-numeric="tabular-nums">39</text>
+<path d="M179.79999999999998,469.0 h337.1 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-337.1 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="481.0" text-anchor="end" fill="#0b0b0b">reqwest-blocking</text>
+<line x1="490.6" y1="477.0" x2="538.4" y2="477.0" stroke="#52514e" stroke-width="1"/>
+<line x1="490.6" y1="474.0" x2="490.6" y2="480.0" stroke="#52514e" stroke-width="1"/>
+<line x1="538.4" y1="474.0" x2="538.4" y2="480.0" stroke="#52514e" stroke-width="1"/>
+<text x="544.4" y="481.0" fill="#52514e" font-variant-numeric="tabular-nums">40</text>
+<path d="M179.79999999999998,495.0 h345.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-345.6 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="507.0" text-anchor="end" fill="#0b0b0b">http_req</text>
+<line x1="511.6" y1="503.0" x2="552.0" y2="503.0" stroke="#52514e" stroke-width="1"/>
+<line x1="511.6" y1="500.0" x2="511.6" y2="506.0" stroke="#52514e" stroke-width="1"/>
+<line x1="552.0" y1="500.0" x2="552.0" y2="506.0" stroke="#52514e" stroke-width="1"/>
+<text x="558.0" y="507.0" fill="#52514e" font-variant-numeric="tabular-nums">41</text>
+<path d="M179.79999999999998,521.0 h352.8 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-352.8 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="533.0" text-anchor="end" fill="#0b0b0b">attohttpc</text>
+<line x1="528.6" y1="529.0" x2="570.4" y2="529.0" stroke="#52514e" stroke-width="1"/>
+<line x1="528.6" y1="526.0" x2="528.6" y2="532.0" stroke="#52514e" stroke-width="1"/>
+<line x1="570.4" y1="526.0" x2="570.4" y2="532.0" stroke="#52514e" stroke-width="1"/>
+<text x="576.4" y="533.0" fill="#52514e" font-variant-numeric="tabular-nums">42</text>
+<path d="M179.79999999999998,547.0 h364.0 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-364.0 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="559.0" text-anchor="end" fill="#0b0b0b">tinyget</text>
+<line x1="535.0" y1="555.0" x2="570.6" y2="555.0" stroke="#52514e" stroke-width="1"/>
+<line x1="535.0" y1="552.0" x2="535.0" y2="558.0" stroke="#52514e" stroke-width="1"/>
+<line x1="570.6" y1="552.0" x2="570.6" y2="558.0" stroke="#52514e" stroke-width="1"/>
+<text x="576.6" y="559.0" fill="#52514e" font-variant-numeric="tabular-nums">43</text>
+<path d="M179.79999999999998,573.0 h382.4 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-382.4 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="585.0" text-anchor="end" fill="#0b0b0b">reqwest-tokio</text>
+<line x1="555.5" y1="581.0" x2="586.6" y2="581.0" stroke="#52514e" stroke-width="1"/>
+<line x1="555.5" y1="578.0" x2="555.5" y2="584.0" stroke="#52514e" stroke-width="1"/>
+<line x1="586.6" y1="578.0" x2="586.6" y2="584.0" stroke="#52514e" stroke-width="1"/>
+<text x="592.6" y="585.0" fill="#52514e" font-variant-numeric="tabular-nums">46</text>
+<path d="M179.79999999999998,599.0 h389.0 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-389.0 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="611.0" text-anchor="end" fill="#0b0b0b">reqwest-blocking-native</text>
+<line x1="560.9" y1="607.0" x2="579.0" y2="607.0" stroke="#52514e" stroke-width="1"/>
+<line x1="560.9" y1="604.0" x2="560.9" y2="610.0" stroke="#52514e" stroke-width="1"/>
+<line x1="579.0" y1="604.0" x2="579.0" y2="610.0" stroke="#52514e" stroke-width="1"/>
+<text x="585.0" y="611.0" fill="#52514e" font-variant-numeric="tabular-nums">46</text>
+<path d="M179.79999999999998,625.0 h421.8 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-421.8 z" fill="#2a78d6"/>
+<text x="171.79999999999998" y="637.0" text-anchor="end" fill="#0b0b0b">ureq-native</text>
+<line x1="586.9" y1="633.0" x2="615.2" y2="633.0" stroke="#52514e" stroke-width="1"/>
+<line x1="586.9" y1="630.0" x2="586.9" y2="636.0" stroke="#52514e" stroke-width="1"/>
+<line x1="615.2" y1="630.0" x2="615.2" y2="636.0" stroke="#52514e" stroke-width="1"/>
+<text x="621.2" y="637.0" fill="#52514e" font-variant-numeric="tabular-nums">50</text>
+</svg>
