@@ -1,0 +1,8 @@
+[package]
+name = "fetch-attohttpc-rustls"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+attohttpc = { version = "0.31", default-features = false, features = ["compress", "tls-rustls-webpki-roots"] }

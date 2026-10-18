@@ -1,0 +1,8 @@
+[package]
+name = "fetch-ureq-native"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+ureq = { version = "3", default-features = false, features = ["native-tls", "gzip"] }

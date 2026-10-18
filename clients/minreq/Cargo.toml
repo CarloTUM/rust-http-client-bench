@@ -1,0 +1,8 @@
+[package]
+name = "fetch-minreq"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+minreq = { version = "3", features = ["https"] }

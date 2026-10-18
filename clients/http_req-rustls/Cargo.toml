@@ -1,0 +1,8 @@
+[package]
+name = "fetch-http_req-rustls"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+http_req = { version = "0.14", default-features = false, features = ["rust-tls"] }
