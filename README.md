@@ -131,7 +131,39 @@ shared hardware, so take the timing columns as a ranking rather than as
 exact values. Binary size, crate count and build time are exact.
 
 <!-- results:ci-ubuntu-x86_64 start -->
-(no CI run yet)
+| client | TLS | crates | binary KiB | clean build s | cold start ms | max RSS KiB | per request µs | 8 MiB download RSS KiB | HTTPS CPU ms | HTTPS RSS KiB |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `empty` | none | 0 | 281 | 2 | 0.8 | 1,764 | 0 | 1,808 | 1 | 1,770 |
+| `std-tcp` | none | 0 | 310 | 3 | 1.6 | 1,874 | 64 | 9,980 | - | - |
+| `minreq` | rustls / aws-lc | 12 | 3,690 | 40 | 1.6 | 2,634 | 448 | 13,824 | 40 | 4,736 |
+| `curlite-rustls` | rustls / aws-lc | 35 | 4,401 | 60 | 1.7 | 3,290 | 75 | 11,364 | 44 | 5,818 |
+| `attohttpc-rustls` | rustls / aws-lc | 54 | 4,097 | 50 | 1.7 | 2,900 | 410 | 10,940 | 41 | 5,266 |
+| `http_req-rustls` | rustls / aws-lc | 25 | 3,715 | 45 | 1.8 | 2,818 | 483 | 11,572 | 40 | 4,804 |
+| `ureq` | rustls / ring | 27 | 1,928 | 24 | 1.8 | 2,716 | 51 | 10,996 | 4 | 4,574 |
+| `curlite-ring-min` | rustls / ring | 36 | 2,253 | 32 | 1.8 | 2,972 | 73 | 11,048 | 8 | 4,618 |
+| `curlite-rustls-ring` | rustls / ring | 36 | 2,369 | 34 | 1.9 | 3,018 | 73 | 11,156 | 8 | 4,688 |
+| `attohttpc` | OpenSSL (native-tls) | 53 | 833 | 17 | 2.0 | 3,890 | 412 | 11,880 | 45 | 9,650 |
+| `isahc` | rustls / aws-lc | 94 | 5,017 | 70 | 2.1 | 4,034 | 125 | 12,316 | 45 | 6,224 |
+| `http_req` | OpenSSL (native-tls) | 20 | 459 | 11 | 2.2 | 3,862 | 510 | 12,884 | 45 | 9,154 |
+| `tinyget` | OpenSSL (native-tls) | 17 | 398 | 9 | 2.3 | 3,536 | 439 | 11,640 | 45 | 9,128 |
+| `ureq-native` | OpenSSL (native-tls) | 35 | 880 | 15 | 2.5 | 4,188 | 51 | 14,504 | 60 | 10,778 |
+| `curlite-static-ssl` | OpenSSL | 20 | 6,658 | 99 | 2.9 | 5,598 | 74 | 13,900 | 9 | 8,324 |
+| `curlite-static` | OpenSSL | 20 | 1,106 | 26 | 3.2 | 6,296 | 73 | 14,460 | 10 | 8,586 |
+| `hyper` | rustls / aws-lc | 43 | 3,965 | 49 | 5.0 | 3,658 | 48 | 14,020 | 44 | 5,204 |
+| `reqwest-tokio-ct` | rustls / aws-lc | 94 | 4,792 | 60 | 5.1 | 4,210 | 61 | 14,700 | 44 | 5,994 |
+| `reqwest-blocking` | rustls / aws-lc | 95 | 4,823 | 61 | 5.6 | 4,350 | 95 | 14,652 | 44 | 6,130 |
+| `reqwest-tokio` | rustls / aws-lc | 94 | 4,838 | 61 | 5.7 | 5,094 | 103 | 15,372 | 45 | 6,696 |
+| `curl` | OpenSSL | 7 | 310 | 5 | 6.2 | 10,384 | 57 | 18,320 | 30 | 13,272 |
+| `curlite` | OpenSSL | 20 | 431 | 9 | 6.3 | 10,494 | 64 | 18,264 | 12 | 13,062 |
+| `reqwest-blocking-native` | OpenSSL (native-tls) | 93 | 1,555 | 31 | 43.1 | 9,738 | 108 | 20,024 | 48 | 10,176 |
+
+AMD EPYC 7763 64-Core Processor, Ubuntu 24.04.5 LTS 6.17.0-1022-azure (GitHub Actions runner: shared hardware, treat timings as rough); 2026-10-19; rustc 1.99.1 (58cf8f9c3 2026-10-13); runs=20, in-process requests=200; HTTPS against `https://example.com/`; libcurl libcurl 8.5.0.
+
+<details><summary>Crate versions</summary>
+
+attohttpc: attohttpc 0.31.0; attohttpc-rustls: attohttpc 0.31.0; curl: curl 0.4.51; curlite: curlite 0.2.1; curlite-rustls: curlite 0.2.1; http_req: http_req 0.14.6; http_req-rustls: http_req 0.14.6; hyper: http-body-util 0.1.5, hyper 1.12.0, hyper-rustls 0.27.10, hyper-util 0.1.21, tokio 1.53.3; isahc: isahc 2.0.1; minreq: minreq 3.0.0; reqwest-blocking: reqwest 0.13.5; reqwest-blocking-native: reqwest 0.13.5; reqwest-tokio: reqwest 0.13.5, tokio 1.53.3; reqwest-tokio-ct: reqwest 0.13.5, tokio 1.53.3; tinyget: tinyget 1.1.4; ureq: ureq 3.4.2; ureq-native: ureq 3.4.2; curlite-ring-min: curl 0.4.51, curlite 0.2.1; curlite-rustls-ring: curl 0.4.51, curlite 0.2.1; curlite-static: curlite 0.2.1; curlite-static-ssl: curlite 0.2.1
+
+</details>
 <!-- results:ci-ubuntu-x86_64 end -->
 
 ## The clients

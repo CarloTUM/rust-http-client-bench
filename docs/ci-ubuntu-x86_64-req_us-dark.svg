@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="708" viewBox="0 0 760 708" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12">
+<rect width="760" height="708" fill="#1a1a19"/>
+<text x="16" y="24" font-size="14" font-weight="600" fill="#f0efec">Cost per request inside one process, keep-alive</text>
+<text x="16" y="42" fill="#c3c2b7">AMD EPYC 7763 64-Core Processor, Ubuntu 24.04.5 LTS 6.17.0-1022-azure (GitHub Actions runner: shared hardware, treat timings as rough)</text>
+<text x="16" y="58" fill="#c3c2b7">2026-10-19, median of 20 runs</text>
+<line x1="179.8" y1="68" x2="179.8" y2="672" stroke="#2c2c2a" stroke-width="1"/>
+<text x="179.8" y="688" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">0</text>
+<line x1="349.2" y1="68" x2="349.2" y2="672" stroke="#2c2c2a" stroke-width="1"/>
+<text x="349.2" y="688" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">200</text>
+<line x1="518.6" y1="68" x2="518.6" y2="672" stroke="#2c2c2a" stroke-width="1"/>
+<text x="518.6" y="688" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">400</text>
+<line x1="688.0" y1="68" x2="688.0" y2="672" stroke="#2c2c2a" stroke-width="1"/>
+<text x="688.0" y="688" text-anchor="middle" fill="#898781" font-variant-numeric="tabular-nums">600 µs</text>
+<line x1="179.79999999999998" y1="68" x2="179.79999999999998" y2="672" stroke="#383835" stroke-width="1"/>
+<path d="M179.79999999999998,79.0 h0.5 a0.5,0.5 0 0 1 0.5,0.5 v15.0 a0.5,0.5 0 0 1 -0.5,0.5 h-0.5 z" fill="#5c5b57"/>
+<text x="171.79999999999998" y="91.0" text-anchor="end" fill="#f0efec">empty</text>
+<text x="185.8" y="91.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">0</text>
+<path d="M179.79999999999998,105.0 h36.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-36.2 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="117.0" text-anchor="end" fill="#f0efec">hyper</text>
+<text x="226.0" y="117.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">48</text>
+<path d="M179.79999999999998,131.0 h39.1 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-39.1 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="143.0" text-anchor="end" fill="#f0efec">ureq</text>
+<text x="228.9" y="143.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">51</text>
+<path d="M179.79999999999998,157.0 h39.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-39.2 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="169.0" text-anchor="end" fill="#f0efec">ureq-native</text>
+<text x="229.0" y="169.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">51</text>
+<path d="M179.79999999999998,183.0 h44.0 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-44.0 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="195.0" text-anchor="end" fill="#f0efec">curl</text>
+<text x="233.8" y="195.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">57</text>
+<path d="M179.79999999999998,209.0 h47.5 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-47.5 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="221.0" text-anchor="end" fill="#f0efec">reqwest-tokio-ct</text>
+<text x="237.3" y="221.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">61</text>
+<path d="M179.79999999999998,235.0 h49.8 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-49.8 z" fill="#5c5b57"/>
+<text x="171.79999999999998" y="247.0" text-anchor="end" fill="#f0efec">std-tcp</text>
+<text x="239.6" y="247.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">64</text>
+<path d="M179.79999999999998,261.0 h50.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-50.6 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="273.0" text-anchor="end" fill="#f0efec">curlite</text>
+<text x="240.4" y="273.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">64</text>
+<path d="M179.79999999999998,287.0 h57.7 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-57.7 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="299.0" text-anchor="end" fill="#f0efec">curlite-rustls-ring</text>
+<text x="247.5" y="299.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">73</text>
+<path d="M179.79999999999998,313.0 h57.7 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-57.7 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="325.0" text-anchor="end" fill="#f0efec">curlite-ring-min</text>
+<text x="247.5" y="325.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">73</text>
+<path d="M179.79999999999998,339.0 h58.0 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-58.0 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="351.0" text-anchor="end" fill="#f0efec">curlite-static</text>
+<text x="247.8" y="351.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">73</text>
+<path d="M179.79999999999998,365.0 h58.6 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-58.6 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="377.0" text-anchor="end" fill="#f0efec">curlite-static-ssl</text>
+<text x="248.4" y="377.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">74</text>
+<path d="M179.79999999999998,391.0 h59.7 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-59.7 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="403.0" text-anchor="end" fill="#f0efec">curlite-rustls</text>
+<text x="249.5" y="403.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">75</text>
+<path d="M179.79999999999998,417.0 h76.2 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-76.2 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="429.0" text-anchor="end" fill="#f0efec">reqwest-blocking</text>
+<text x="266.0" y="429.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">95</text>
+<path d="M179.79999999999998,443.0 h83.4 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-83.4 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="455.0" text-anchor="end" fill="#f0efec">reqwest-tokio</text>
+<text x="273.2" y="455.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">103</text>
+<path d="M179.79999999999998,469.0 h87.7 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-87.7 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="481.0" text-anchor="end" fill="#f0efec">reqwest-blocking-native</text>
+<text x="277.5" y="481.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">108</text>
+<path d="M179.79999999999998,495.0 h101.5 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-101.5 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="507.0" text-anchor="end" fill="#f0efec">isahc</text>
+<text x="291.3" y="507.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">125</text>
+<path d="M179.79999999999998,521.0 h343.3 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-343.3 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="533.0" text-anchor="end" fill="#f0efec">attohttpc-rustls</text>
+<text x="533.1" y="533.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">410</text>
+<path d="M179.79999999999998,547.0 h345.1 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-345.1 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="559.0" text-anchor="end" fill="#f0efec">attohttpc</text>
+<text x="534.9" y="559.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">412</text>
+<path d="M179.79999999999998,573.0 h368.1 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-368.1 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="585.0" text-anchor="end" fill="#f0efec">tinyget</text>
+<text x="557.9" y="585.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">439</text>
+<path d="M179.79999999999998,599.0 h375.4 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-375.4 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="611.0" text-anchor="end" fill="#f0efec">minreq</text>
+<text x="565.2" y="611.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">448</text>
+<path d="M179.79999999999998,625.0 h404.9 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-404.9 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="637.0" text-anchor="end" fill="#f0efec">http_req-rustls</text>
+<text x="594.7" y="637.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">483</text>
+<path d="M179.79999999999998,651.0 h427.8 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-427.8 z" fill="#3987e5"/>
+<text x="171.79999999999998" y="663.0" text-anchor="end" fill="#f0efec">http_req</text>
+<text x="617.6" y="663.0" fill="#c3c2b7" font-variant-numeric="tabular-nums">510</text>
+</svg>
